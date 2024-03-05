@@ -11,7 +11,7 @@
  */
 void initialize() {
 	pros::lcd::initialize();
-	pros::lcd::set_text(1, "Hello PROS User!");
+	pros::lcd::set_text(1, "1166T - GPS Test");
 }
 
 /**
@@ -58,7 +58,7 @@ void autonomous() {}
  * operator control task will be stopped. Re-enabling the robot will restart the
  * task, not resume it from where it left off.
  */
-void Gotoposition(double *desx,double *desy){
+void Gotoposition(double *desx, double *desy){
 
     int angle = GPS.get_rotation();
 
